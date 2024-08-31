@@ -1,0 +1,236 @@
+/*HOME*/
+body{
+    background-color: #042f47;
+    
+}
+
+.navbar-brand img {
+    height: 100px; /* Adjust the height as needed */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+/*BODY DO HOME*/
+
+h1, h2 {
+    margin: 0;
+}
+
+/*FOOTER*/
+/*Início Footer*/
+footer {
+    text-align: center;
+    background-color: #042f47;
+    color: #FFF;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+/*BODY GERAL*/
+/* Main */
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*height: 80vh; /* Centraliza verticalmente */
+    text-align: center;
+    width: 100%;
+}
+
+/*PALAVRAS ESCRITAS DE FORMA AUTOMÁTICA NO SOBRE*/
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Centraliza verticalmente */
+    text-align: center;
+    width: 100%;
+}
+
+.typing-container {
+    font-size: 32px; /* Ajuste conforme necessário */
+    font-weight: bold;
+    white-space: nowrap;
+    border-right: 2px solid;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 20px; /* Espaço entre o título e as palavras */
+    font-size: 48px; /* Ajuste conforme necessário */
+}
+.title{
+    color: blanchedalmond;
+}
+
+#typed-words{
+    color: #FFF;
+}
+.centered-section p{
+    color: #FFF;
+}
+
+  .container-fluid {
+    /* flex: 1;  */
+    min-height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(/assets/fundo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position-y: 50px; */
+    display: flex;
+    /*Para deixar um do lado do outro*/
+    flex-direction: column;
+    /*Alinhar os itens em coluna*/
+    justify-content: center;
+    /*Centralizar os itens*/
+    align-items: center;
+    /*Orientar os itens na horizontal*/
+}
+
+/*INFORMAÇÕES DE CONTACTO*/
+.contact-info {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.8em;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-info ion-icon {
+    font-size: 24px;
+    color: #007bff; /* Cor do ícone */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.contact-info p:hover ion-icon {
+    color: #0056b3; /* Cor do ícone ao passar o mouse */
+}
+
+.contact-info p:hover {
+    color: #007bff; /* Cor do texto ao passar o mouse */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+.centered-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.typing-container {
+    height: 40px; /* Defina uma altura suficiente para acomodar as palavras digitadas */
+    overflow: hidden; /* Evita que as palavras saiam do contêiner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#typed-words {
+    font-size: 24px;
+    color: #FFF;
+    font-family: 'Roboto Mono', monospace;
+    white-space: nowrap; /* Garante que as palavras não quebrem em múltiplas linhas */
+}
+
+.contact-info {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.8em;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+
+/* Responsividade */
+
+/* Telas pequenas (celulares em modo retrato) */
+@media (max-width: 576px) {
+    .title {
+        font-size: 28px; /* Reduz o tamanho do título */
+    }
+
+    #typed-words {
+        font-size: 20px; /* Reduz o tamanho do texto digitado */
+    }
+
+    .contact-info p {
+        flex-direction: column; /* Alinha os ícones e texto verticalmente */
+        text-align: center;
+    }
+
+    .contact-info ion-icon {
+        margin-right: 0;
+        margin-bottom: 5px; /* Ajusta o espaçamento entre ícone e texto */
+    }
+}
+
+/* Telas médias (tablets em modo retrato) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    #typed-words {
+        font-size: 22px;
+    }
+
+    .contact-info p {
+        flex-direction: row; /* Mantém o layout horizontal */
+        text-align: center;
+    }
+
+    .contact-info ion-icon {
+        margin-right: 8px;
+    }
+}
+
+/* Telas grandes (desktops) */
+@media (min-width: 769px) {
+    .title {
+        font-size: 36px;
+    }
+
+    #typed-words {
+        font-size: 24px;
+    }
+
+    .contact-info p {
+        flex-direction: row; /* Mantém o layout horizontal */
+        text-align: left;
+    }
+
+    .contact-info ion-icon {
+        margin-right: 10px;
+    }
+}
+
